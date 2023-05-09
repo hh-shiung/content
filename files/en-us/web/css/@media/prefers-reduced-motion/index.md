@@ -2,13 +2,6 @@
 title: prefers-reduced-motion
 slug: Web/CSS/@media/prefers-reduced-motion
 page-type: css-media-feature
-tags:
-  - "@media"
-  - Accessibility
-  - CSS
-  - Media Queries
-  - Reference
-  - media feature
 browser-compat: css.at-rules.media.prefers-reduced-motion
 ---
 
@@ -16,7 +9,7 @@ browser-compat: css.at-rules.media.prefers-reduced-motion
 
 > **Warning:** An embedded example at the bottom of this page has a scaling movement that may be problematic for some readers. Readers with vestibular motion disorders may wish to enable the reduce motion feature on their device before viewing the animation.
 
-The **`prefers-reduced-motion`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#media_features) is used to detect if the user has requested that the system minimize the amount of non-essential motion it uses.
+The **`prefers-reduced-motion`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/@media#media_features) is used to detect if the user has requested that the system minimize the amount of non-essential motion it uses.
 
 ```css
 @media (prefers-reduced-motion) {
@@ -35,15 +28,16 @@ The **`prefers-reduced-motion`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-
 
 For Firefox, the `reduce` request is honoured if:
 
-- In GTK/GNOME: GNOME Tweaks > General tab (or Appearance, depending on version) > Animations is turned off.
+- In GTK/GNOME: Settings > Accessibility > Seeing > Reduced animation is turned on.
 
+  - In older versions of GNOME, GNOME Tweaks > General tab (or Appearance, depending on version) > Animations is turned off.
   - Alternatively, add `gtk-enable-animations = false` to the `[Settings]` block of [the GTK 3 configuration file](https://wiki.archlinux.org/title/GTK#Configuration).
 
 - In Plasma/KDE: System Settings > Workspace Behavior -> General Behavior > "Animation speed" is set all the way to right to "Instant".
 - In Windows 10: Settings > Ease of Access > Display > Show animations in Windows.
 - In Windows 11: Settings > Accessibility > Visual Effects > Animation Effects
 - In macOS: System Preferences > Accessibility > Display > Reduce motion.
-- In iOS: Settings > General > Accessibility > Reduce Motion.
+- In iOS: Settings > Accessibility > Motion.
 - In Android 9+: Settings > Accessibility > Remove animations.
 - In Firefox `about:config`: Add a number preference called `ui.prefersReducedMotion` and set its value to either `0` for full animation or to `1` to indicate a preference for reduced motion. Changes to this preference take effect immediately.
 

@@ -1,21 +1,6 @@
 ---
 title: HTML table basics
 slug: Learn/HTML/Tables/Basics
-tags:
-  - Article
-  - Beginner
-  - CodingScripting
-  - HTML
-  - Learn
-  - Tables
-  - basics
-  - cell
-  - col
-  - colgroup
-  - colspan
-  - header
-  - row
-  - rowspan
 ---
 
 {{LearnSidebar}}{{NextMenu("Learn/HTML/Tables/Advanced", "Learn/HTML/Tables")}}
@@ -62,7 +47,9 @@ The point of a table is that it is rigid. Information is easily interpreted by m
 <table>
   <caption>
     Data about the planets of our solar system (Planetary facts taken from
-    <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+    <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      >Nasa's Planetary Fact Sheet - Metric</a
+    >).
   </caption>
   <thead>
     <tr>
@@ -193,7 +180,10 @@ The point of a table is that it is rigid. Information is easily interpreted by m
       <td>5</td>
       <td>
         Declassified as a planet in 2006, but this
-        <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.
+        <a
+          href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/"
+          >remains controversial</a
+        >.
       </td>
     </tr>
   </tbody>
@@ -240,7 +230,7 @@ In short, using tables for layout rather than [CSS layout techniques](/en-US/doc
 We've talked table theory enough, so, let's dive into a practical example and build up a simple table.
 
 1. First of all, make a local copy of [blank-template.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/blank-template.html) and [minimal-table.css](https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css) in a new directory on your local machine.
-2. The content of every table is enclosed by these two tags : **[`<table></table>`](/en-US/docs/Web/HTML/Element/table)**. Add these inside the body of your HTML.
+2. The content of every table is enclosed by these two tags: **[`<table></table>`](/en-US/docs/Web/HTML/Element/table)**. Add these inside the body of your HTML.
 3. The smallest container inside a table is a table cell, which is created by a **[`<td>`](/en-US/docs/Web/HTML/Element/td)** element ('td' stands for 'table data'). Add the following inside your table tags:
 
    ```html
@@ -556,9 +546,3 @@ See how you get on with the example. If you get stuck, or want to check your wor
 That just about wraps up the basics of HTML tables. In the next article, we'll look at some slightly more [advanced table features](/en-US/docs/Learn/HTML/Tables/Advanced), and start to think how accessible they are for visually impaired people.
 
 {{NextMenu("Learn/HTML/Tables/Advanced", "Learn/HTML/Tables")}}
-
-## In this module
-
-- [HTML table basics](/en-US/docs/Learn/HTML/Tables/Basics)
-- [HTML table advanced features and accessibility](/en-US/docs/Learn/HTML/Tables/Advanced)
-- [Structuring planet data](/en-US/docs/Learn/HTML/Tables/Structuring_planet_data)

@@ -2,14 +2,6 @@
 title: IDBRequest
 slug: Web/API/IDBRequest
 page-type: web-api-interface
-tags:
-  - API
-  - Database
-  - IDBRequest
-  - IndexedDB
-  - Interface
-  - Reference
-  - Storage
 browser-compat: api.IDBRequest
 ---
 
@@ -36,7 +28,7 @@ _Also inherits properties from {{domxref("EventTarget")}}._
 - {{domxref("IDBRequest.error")}} {{ReadOnlyInline}}
   - : Returns a {{domxref("DOMException")}} in the event of an unsuccessful request, indicating what went wrong.
 - {{domxref("IDBRequest.result")}} {{ReadOnlyInline}}
-  - : Returns the result of the request. If the request failed and the result is not available, an InvalidStateError exception is thrown.
+  - : Returns the result of the request. If the request is not completed, the result is not available and an `InvalidStateError` exception is thrown.
 - {{domxref("IDBRequest.source")}} {{ReadOnlyInline}}
   - : The source of the request, such as an {{domxref("IDBIndex")}} or an {{domxref("IDBObjectStore")}}. If no source exists (such as when calling {{domxref("IDBFactory.open")}}), it returns null.
 - {{domxref("IDBRequest.readyState")}} {{ReadOnlyInline}}
@@ -70,11 +62,11 @@ const DBOpenRequest = window.indexedDB.open("toDoList", 4);
 // these two event handlers act on the database being
 // opened successfully, or not
 DBOpenRequest.onerror = (event) => {
-  note.innerHTML += '<li>Error loading database.</li>';
+  note.innerHTML += "<li>Error loading database.</li>";
 };
 
 DBOpenRequest.onsuccess = (event) => {
-  note.innerHTML += '<li>Database initialized.</li>';
+  note.innerHTML += "<li>Database initialized.</li>";
 
   // store the result of opening the database.
   db = DBOpenRequest.result;

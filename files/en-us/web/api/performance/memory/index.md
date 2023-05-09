@@ -1,14 +1,15 @@
 ---
-title: Performance.memory
+title: "Performance: memory property"
+short-title: memory
 slug: Web/API/Performance/memory
 page-type: web-api-instance-property
-browser-compat: api.Performance.memory
-tags:
-  - non-standard
+status:
   - deprecated
+  - non-standard
+browser-compat: api.Performance.memory
 ---
 
-{{APIRef("Performance API")}} {{Deprecated_Header}}
+{{APIRef("Performance API")}} {{Deprecated_Header}}{{Non-standard_header}}
 
 The non-standard and legacy `performance.memory` property returns the size of the JavaScript heap which can be helpful to measure and reduce the memory footprint of websites.
 
